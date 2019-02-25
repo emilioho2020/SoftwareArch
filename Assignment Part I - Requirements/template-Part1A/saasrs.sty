@@ -1,0 +1,11 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{saasrs}[2019/02/21 ASR reporting support]
+\newcounter{ASRc}
+\DeclareDocumentCommand{\insertASR}{ O{1-4} m m m m m m m}{%
+\stepcounter{ASRc}%
+\arabic{ASRc} & #2 & #3 & {#4} \\* \cmidrule{4-4}
+& & & \textbf{#5:} \emph{#6} \ldots 
+	\\*	\cmidrule{4-4}
+& & & \textbf{#7:} \emph{#8} \ldots 
+	\\*	\cmidrule{#1}
+}

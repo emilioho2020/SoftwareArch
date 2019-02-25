@@ -1,0 +1,93 @@
+\documentclass{sareport}
+\usepackage{tabu,longtable,booktabs,array}
+\usepackage{saasrs}
+
+
+\addAuthor{FirstName3}{LastName3}{r000000}
+\addAuthor{FirstName1}{A LastName1}{m000000}
+\addAuthor{FirstName2}{B LastName2}{s000000}
+
+
+\casename{Shared Internet-of-Things Infrastructure Platform (SIoTIP)}
+\phasenumber{Part 1A}
+\phasename{Requirements Analysis}
+
+\academicyear{2017--2018}
+
+
+\begin{document}
+\maketitle
+
+
+
+\chapter{Utility tree of ASRs}
+
+
+
+\todoinline{Fill in the table for each ASR.}
+\todoinline{For the summary, describe what the requirement is about? Be short but precise.}
+\todoinline{For the Business value and architectural impact: shortly explain why.}
+
+\note{
+	RequirementType can be any of: \{Availability, Interoperability, Modifiability, Performance, Security, Testability, Usability\}
+	or some other less-common types: \{variability, portability, development distributability, scalability and elasticity, deployability, mobility, and monitorability\}
+}
+
+\begin{longtabu}{X[.1] X[2] X[2] X[10]}
+	\toprule
+	& \textbf{Quality Attribute} & \textbf{Attribute Refinement} & \textbf{Summary \newline Rationale \emph{Business Value} \newline Rationale \emph{Architectural Impact}} \\*
+	\midrule
+	\endhead
+	\insertASR[3-4]{QualityType1}{Refinement1}
+	{Summary of your ASR. This can be a long description that spans multiple lines. The table in this template will automatically wrap the lines. The table can span multiple pages as well, you do not need to create additional tables for this.}
+	{H}{Why does this ASR have a high business value \ldots}
+	{M}{Why does this ASR have a medium architectural impact \ldots}
+	\insertASR[1-4]{}{Refinement2}{Summary of your ASR. This can be a long description that spans multiple lines. The table in this template will automatically wrap the lines. The table can span multiple pages as well, you do not need to create additional tables for this.}
+	{L}{Why does this ASR have a low business value \ldots}
+	{H}{Why does this ASR have a high architectural impact \ldots}
+	\insertASR[1-4]{QualityType2}{Refinement1}
+	{Summary of your ASR. This can be a long description that spans multiple lines. The table in this template will automatically wrap the lines. The table can span multiple pages as well, you do not need to create additional tables for this.}
+	{H}{Why does this ASR have a high business value \ldots}
+	{H}{Why does this ASR have a high architectural impact \ldots}
+
+\end{longtabu}
+
+
+
+\chapter{Quality Attribute Scenarios}
+
+\note{
+In this section, we model the non-functional requirements for the system in the
+form of \emph{quality attribute scenarios}.
+
+RequirementType can be any of: \{Availability, Interoperability, Modifiability, Performance, Security, Testability, Usability\}
+or some other less-common types: \{ variability, portability, development distributability, scalability and elasticity, deployability, mobility, and monitorability\}
+}
+
+\section{RequirementType: Name of the quality attribute scenario}
+\todoinline{Shortly describe the context of the scenario. \\ Next fill in using the structure defined below.}
+
+Context of scenario.
+
+\begin{itemize}
+	\item \textbf{Source:} source
+	\item \textbf{Stimulus:}
+	\begin{itemize}
+		\item Description of a first stimulus.
+		\item Description of a second stimulus.
+	\end{itemize}
+	
+	\item \textbf{Artifact:} the stimulated artifact
+	\item \textbf{Environment:} the condition under which the stimulus occurs
+	\item \textbf{Response:}
+	\begin{itemize}
+		\item Describe how the system should respond to the stimulus.
+	\end{itemize}
+	
+	\item \textbf{Response measure:}
+	\begin{itemize}
+		\item Describe how the satisfaction of a response is measured.
+	\end{itemize}
+\end{itemize}
+
+\end{document}
