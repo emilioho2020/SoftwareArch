@@ -1,0 +1,13 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{saquestions}[2018/03/23 Answering SA Questions]
+\RequirePackage{amssymb}
+\RequirePackage{multido}
+\newcommand{\markdiff}[1]{\multido{}{#1}{$\bigstar$}\,}
+\DeclareDocumentCommand{\answerQ}{ O{0} O{} m m m m}{%
+\noindent\textbf{Q#3} \markdiff{#1} #2
+\begin{itemize}[noitemsep]
+	\item \textbf{Answer:} #4
+	\item \textbf{Evidence and assumptions:} #5
+	\item \textbf{Opinion and improvements:} #6
+\end{itemize}%
+}
